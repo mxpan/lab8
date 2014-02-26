@@ -5,6 +5,10 @@ $(document).ready(function() {
 	initializePage();
 });
 
+$('.likeBtn').click(function(e) {
+	ga("send", "event", "like", "click");
+});
+
 /*
  * Function that is called when the document is ready.
  */
